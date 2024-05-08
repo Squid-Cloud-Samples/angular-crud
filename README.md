@@ -18,9 +18,9 @@
 ### Running the project
 1. In the [Squid Cloud Console](https://console.squid.cloud) create a new app called `angular-crud`.
 2. Connect the Squid backend to the new app you created by scrolling in the console to the **Backend** section and selecting **Create .env file**. Copy the command.
-3. Open a terminal window and change to the `angular-crud-backend` directory.
+3. Open a terminal window and change to the `backend` directory.
 ```bash
-cd angular-crud/angular-crud-backend
+cd backend
 ```
 4. Install the required packages:
 ```bash
@@ -41,14 +41,13 @@ squid start
 ```
 7. Open a second terminal window. In this window, navigate to the frontend:
 ```bash
-cd angular-crud/angular-crud-frontend
+cd frontend
 ```
 8. Install the required dependencies, including the Angular CLI:
 ```bash
-npm install -g @angular/cli
 npm install
 ```
-9. Open the `angular-crud-frontend/src/app/app.module.ts` file and update the configuration with your app's information. You can find the values in the Squid Cloud Console or in the `.env` file you downloaded.
+9. Open the `frontend/src/app/app.module.ts` file and update the configuration with your app's information. You can find the values in the Squid Cloud Console or in the `.env` file you downloaded.
 10. Start the frontend by running:
 ```bash
 ng serve
